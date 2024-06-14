@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/l2"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/loginLogo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/istok_web"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="Log into"
+        android:textColor="#FFFFFFFF"
+        android:textSize="40dp"
+        android:transitionName="logo_image" />
+
+    <TextView
+        android:id="@+id/loginLogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/istok_web"
+        android:paddingLeft="15dp"
+        android:text="your account"
+        android:textColor="#FEFEFE"
+        android:textSize="40dp"
+        android:transitionName="logo_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="487dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edittextemail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/inder"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:transitionName="username_trans" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inder"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:transitionName="password_trans" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/forgetpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="40dp"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:fontFamily="@font/inder"
+            android:text="Forget ?"
+            android:textAlignment="textEnd"
+            android:textColor="#FEFEFE"
+            android:textSize="16sp"
+            android:transitionName="fogetpass_trans" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#C7D3D5"
+            android:fontFamily="@font/istok_web"
+            android:text="Log in"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:transitionName="loginbtn_trans" />
+
+        <Button
+            android:id="@+id/signup_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:fontFamily="@font/inder"
+            android:text="Don’t have an account ? Sign Up"
+            android:textAlignment="center"
+            android:textColor="#FEFEFE"
+            android:textSize="16sp"
+            android:transitionName="signup_page" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

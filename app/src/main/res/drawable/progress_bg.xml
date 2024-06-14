@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Add a default item to the selector -->
+    <item>
+        <rotate
+            android:fromDegrees="0"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="360">
+
+            <!-- Shape to be rotated -->
+            <shape
+                android:innerRadiusRatio="3"
+                android:shape="ring"
+                android:thicknessRatio="8"
+                android:useLevel="false">
+
+                <!-- Size of the shape -->
+                <size
+                    android:width="76dip"
+                    android:height="76dip" />
+
+                <!-- Color gradients of the shape -->
+                <gradient
+                    android:angle="0"
+                    android:endColor="#0D454D"
+                    android:startColor="#00ffffff"
+                    android:type="sweep"
+                    android:useLevel="false" />
+            </shape>
+
+        </rotate>
+    </item>
+</selector>
