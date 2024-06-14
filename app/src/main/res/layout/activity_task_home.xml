@@ -89,7 +89,7 @@
                     android:fontFamily="@font/istok_web"
                     android:textColor="@color/black"
                     android:textSize="30dp"
-                    android:text="!"
+                    android:text=" !"
                     />
             </LinearLayout>
 
