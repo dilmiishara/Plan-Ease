@@ -134,6 +134,8 @@ public class TaskHome extends AppCompatActivity {
         dialog.getButton(DialogInterface.BUTTON_NEGATIVE).setBackground(getResources().getDrawable(R.drawable.rounded_rectangle));
     }
 
+
+    // option menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
